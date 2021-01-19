@@ -26,13 +26,47 @@ body{
 
 .logo, .menu{
   display: inline-block;
-  border: dashed 1px red;
+  //border: dashed 1px red;
 }
 
 .logo {
-  margin-right: 63%;
-  padding: 40px 0;
+    position: relative;
+    padding: 40px 0;
+    font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
+    padding-left: 44px;
+    top: 50%;
+    //left: 50px;
+    //font-family: pt_serif, arial, helvetica, sans-serif;
+  //font-weight: bold;
+  //font-size: 24px;
+  //line-height: 31px;
+
 }
+
+.logo__circle{
+  width: 28px;
+  height: 28px;
+  border: dashed 1px red;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .7;
+
+}
+
+.logo__circle_color_dark-blue {
+ background: #0056EC;
+ border-radius: 50%;
+}
+
+.logo__circle_color_blue {
+ left: 8px;
+ top: 56%;
+ background: #C8DBFB;
+ border-radius: 50%;
+}
+
 
 .header{
   display: flex;
