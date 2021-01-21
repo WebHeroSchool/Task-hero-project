@@ -70,6 +70,149 @@ body{
 .header{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item{
+  position: relative;
+  margin-right: 26px;
+  font: bold 18px/21px pt_serif, arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+  transition: opacity .5s;
+  //border: dashed 1px red;
+  //padding: 0 13px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__item:hover{
+  opacity: .5;
+  color: #09c;
+}
+
+.menu__item_active::after{
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #09c;
+}
+
+.main{
+  //padding-top: 206px;
+  padding: 15px 63% 200px 0;
+  background: top right no-repeat url(img/frame.svg);
+  //background: url(img/group.svg);
+  //background-repeat: no-repeat;
+  //background-position: top right;
+}
+
+.main__title{
+  margin-bottom: 0 0 100px 0;
+  font: bold 66px/87px pt_serif, arial, helvetica, sans-serif;
+}
+.main__subtitle{
+  margin-bottom:0 0 41px 0;
+  font: 22px/26px pt_serif, arial, helvetica, sans-serif;
+}
+
+.main__button{
+  font: 14px/16px pt_serif, arial, helvetica, sans-serif;
+  padding: 18px 21px;
+  text-decoration: none;
+  color: #fff;
+  background: #09c;
+  border-radius: 4px;
+  transition: opacity .5s;
+}
+
+.main__button:hover{
+  opacity: .5;
+}
+.main__title-text_highlight{
+  background: #d1ecf5;
+}
+.title{
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  border: dashed 1px red;
+  margin: 0;
+}
+
+/*.header {
+  border: dashed 1px red;
+  width: 80%;
+  margin: auto;
+}
+
+.main-section{
+  margin: auto;
+  border: dashed 1px green;
+  width: 80%;
+}*/
+
+.wrapper{
+  margin: auto;
+  width: 80%;
+  border: dashed 1px blue;
+}
+
+.logo, .menu{
+  display: inline-block;
+  //border: dashed 1px red;
+}
+
+.logo {
+    position: relative;
+    padding: 40px 0;
+    font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
+    padding-left: 44px;
+    top: 50%;
+    //left: 50px;
+    //font-family: pt_serif, arial, helvetica, sans-serif;
+  //font-weight: bold;
+  //font-size: 24px;
+  //line-height: 31px;
+
+}
+
+.logo__circle{
+  width: 28px;
+  height: 28px;
+  border: dashed 1px red;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .7;
+
+}
+
+.logo__circle_color_dark-blue {
+ background: #0056EC;
+ border-radius: 50%;
+}
+
+.logo__circle_color_blue {
+ left: 8px;
+ top: 56%;
+ background: #C8DBFB;
+ border-radius: 50%;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu {
